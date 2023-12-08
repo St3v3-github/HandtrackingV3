@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Ultraleap Settings
   m_EditorClassIdentifier: 
   leapSubsystemEnabled: 0
-  updateLeapInputSystem: 0
-  updateMetaInputSystem: 0
+  updateLeapInputSystem: 1
+  updateMetaInputSystem: 1
   showAndroidBuildArchitectureWarning: 1
