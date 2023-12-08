@@ -5,18 +5,33 @@ using UnityEngine;
 
 public class RespawnField : MonoBehaviour
 {
-    public Vector3 startPos;
+    // Specify the tag that triggers the transform reset
+    public string targetTag = "YourTargetTag"; 
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        startPos = transform.position;
+        // Check if the entering GameObject has the specified tag
+        if (other.CompareTag(targetTag))
+        {
+            // Reset the transform of the entering GameObject
+            ResetTransform(other.gameObject);
+        }
     }
 
-    void OnTriggerEnter()
+    private void ResetTransform(GameObject objToReset)
     {
-        if (gameObject.tag == "Interactable")
+        // Reset the position, rotation of the specified GameObject
+        objToReset.transform.position = new Vector3(0f, 0.920000017f, 0.352999985f);
+        objToReset.transform.rotation = Quaternion.identity;
+
+        // Check if the GameObject has a Rigidbody
+        Rigidbody rigidbody = objToReset.GetComponent<Rigidbody>();
+        if (rigidbody != null)
         {
-            transform.position = startPos;
+            // Reset the velocity of the Rigidbody
+            rigidbody.velocity = Vector3.zero;
         }
     }
 }
+
+//Vector3(0, 0.920000017, 0.352999985)
