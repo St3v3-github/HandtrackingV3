@@ -21,7 +21,7 @@ public class RespawnField : MonoBehaviour
     private void ResetTransform(GameObject objToReset)
     {
         // Reset the position, rotation of the specified GameObject
-        objToReset.transform.position = new Vector3(0f, 0.920000017f, 0.352999985f);
+        objToReset.transform.position = new Vector3(0.129999995f, 1.01600003f, -0.228f);
         objToReset.transform.rotation = Quaternion.identity;
 
         // Check if the GameObject has a Rigidbody
