@@ -1076,6 +1076,11 @@ PrefabInstance:
       propertyPath: _manager
       value: 
       objectReference: {fileID: 1942587104}
+    - target: {fileID: 1887787993114816642, guid: a07a5075f39b80344ae6800509478bae,
+        type: 3}
+      propertyPath: _allowMultiGrasp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1990817852948272340, guid: a07a5075f39b80344ae6800509478bae,
         type: 3}
       propertyPath: m_Name
@@ -4495,7 +4500,7 @@ PrefabInstance:
     - target: {fileID: 781630661673262082, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.001591432
+      value: 0.0014295038
       objectReference: {fileID: 0}
     - target: {fileID: 781630661673262082, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
@@ -4545,7 +4550,7 @@ PrefabInstance:
     - target: {fileID: 781630661673262082, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.137
+      value: 0.124
       objectReference: {fileID: 0}
     - target: {fileID: 781630661673262082, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
@@ -4695,7 +4700,21 @@ PrefabInstance:
     - target: {fileID: 5483714724633069137, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_Text
-      value: Use your hands to Grab Objects, pick them up and Throw them around!
+      value: 'Use your hands to Grab Objects, pick them up and Throw them around!
+
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483714724633069137, guid: c24a7635b5761984d81cf6c4aac26e0d,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483714724633069137, guid: c24a7635b5761984d81cf6c4aac26e0d,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5905520615912367237, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
@@ -4732,6 +4751,11 @@ PrefabInstance:
       propertyPath: m_OverridePixelPerfect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6549131284124938908, guid: c24a7635b5761984d81cf6c4aac26e0d,
+        type: 3}
+      propertyPath: m_VerticalFit
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6960627886175621283, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_BlockingMask.m_Bits
@@ -4751,6 +4775,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503936499194532900, guid: c24a7635b5761984d81cf6c4aac26e0d,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503936499194532900, guid: c24a7635b5761984d81cf6c4aac26e0d,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8503936499194532900, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
@@ -19897,7 +19931,7 @@ MonoBehaviour:
   suspendedColor: {r: 1, g: 0, b: 0, a: 1}
   hoverColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   primaryHoverColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  pressedColor: {r: 0.4339623, g: 0.4274119, b: 0.4274119, a: 1}
+  pressedColor: {r: 0, g: 1, b: 0.123800755, a: 1}
   rends: []
 --- !u!114 &1931436017
 MonoBehaviour:
@@ -20920,7 +20954,7 @@ Transform:
   m_GameObject: {fileID: 2081828422}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0, y: -0.363, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
